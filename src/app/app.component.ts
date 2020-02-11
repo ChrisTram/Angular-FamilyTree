@@ -16,6 +16,7 @@ export class AppComponent {
   constructor() {
       this.coords = [];
       this.populate();
+      this.display(0); //TODO remove in prod
   }
 
   display(val) {

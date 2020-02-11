@@ -1,15 +1,17 @@
 <tree-root [focused]="true" [nodes]="config" [options]="options">
     <ng-template #treeNodeTemplate let-node let-index="index">
-        <span [ngClass]="node.data.classes" (click)="populate(node.data.id)">{{ node.data.name }}</span>
+        <span [ngClass]="node.data.classes" (click)="populate(node.data.id)">{{ node.data.name}} {{ node.data.year}} {{ node.data.yearD}}</span>
     </ng-template>
 </tree-root>
 
 <div id="description">
     {{description}}
 </div>
+<!--
 
 <agm-map style="height: 600px" [latitude]="coords[0].lat" [longitude]="coords[0].lon" [zoom]="8" >
     <div *ngFor="let coo of coords">
         <agm-marker [latitude]="coo.lat" [longitude]="coo.lon"></agm-marker>
     </div>
 </agm-map>
+-->

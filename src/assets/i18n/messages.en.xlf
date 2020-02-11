@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="6dcfe7b35be7ab780dca5be436ffe1a5f130eb55" datatype="html">
                 <source>Choisir une branche</source>
-                <target>Choose a branch</target>
+                <target>Choisir une branche</target>
                 <context-group purpose="location">
                     <context context-type="sourcefile">app/app.component.html</context>
                     <context context-type="linenumber">1</context>

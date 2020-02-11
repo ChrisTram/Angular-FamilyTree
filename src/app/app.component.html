@@ -1,15 +1,10 @@
 <h1 i18n="h1Text">Choisir une branche</h1>
-<button (click)="display(0)">Branche principale</button>
-<button (click)="display(1)">Branche Arnaud</button>
-<button (click)="display(2)">Branche Barthe</button>
-<button (click)="display(3)">Branche Maillot</button>
-<button (click)="display(4)">Branche Mainguy</button>
+<button (click)="display(0)">Branche TRAMIER</button>
 <button (click)="display(5)">Afficher carte globale</button>
-<app-tree-mainguy *ngIf="branch === 4"></app-tree-mainguy>
-<app-tree-maillot *ngIf="branch === 3"></app-tree-maillot>
-<app-tree-barthe *ngIf="branch === 2"></app-tree-barthe>
-<app-tree-arnaud *ngIf="branch === 1"></app-tree-arnaud>
+
 <app-tree-core *ngIf="branch === 0"></app-tree-core>
+
+<!--
 <agm-map *ngIf="branch === 5" style="height: 800px" [latitude]="coords[24].lat" [longitude]="coords[24].lon" [zoom]="7" >
     <div *ngFor="let coo of coords">
         <agm-marker [latitude]="coo.lat" [longitude]="coo.lon" [iconUrl]="{url: './../assets/images/' + coo.opts, scaledSize: {
@@ -18,3 +13,5 @@
     }}"></agm-marker>
     </div>
 </agm-map>
+
+-->

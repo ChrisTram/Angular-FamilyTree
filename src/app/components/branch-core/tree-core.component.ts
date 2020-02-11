@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {PositionModel} from '../../models/position.model';
-import {DescriptionsService} from '../../services/descriptions.service';
+import { Component } from '@angular/core';
+import { PositionModel } from '../../models/position.model';
+import { DescriptionsService } from '../../services/descriptions.service';
 
 @Component({
     selector: 'app-tree-core',
@@ -10,27 +10,27 @@ import {DescriptionsService} from '../../services/descriptions.service';
 export class TreeCoreComponent {
     config = [
         {
-            id: 1, name: 'Julian ARNAUD', isExpanded: true, classes: ['arnaud'],
+            id: 1, name: 'Chris TRAMIER', isExpanded: true, classes: ['tramier'], year: 1997,
             children: [
                 {
-                    id: 2, name: 'Michel ARNAUD', isExpanded: true, classes: ['arnaud'],
+                    id: 2, name: 'Jean-Luc TRAMIER', isExpanded: true, classes: ['tramier'], year: 1965,
                     children: [
                         {
-                            id: 4, name: 'Emile ARNAUD', isExpanded: false, classes: ['arnaud']
+                            id: 4, name: 'Noël TRAMIER', isExpanded: false, classes: ['tramier'], year: 1934,
                         },
                         {
-                            id: 5, name: 'Juliette BARTHE', isExpanded: false
+                            id: 5, name: 'Micheline CALABRESE', isExpanded: false, year: 1942, classes: ['calabrese']
                         }
                     ]
                 },
                 {
-                    id: 3, name: 'Annie MAILLOT', isExpanded: true, classes: ['maillot'],
+                    id: 3, name: 'Véronique AFFRE', isExpanded: false, classes: ['affre'], year: 1970,
                     children: [
                         {
-                            id: 6, name: 'Pierre MAILLOT', isExpanded: false, classes: ['maillot']
+                            id: 6, name: 'Gilbert AFFRE', isExpanded: false, classes: ['affre'], year: 1938, yearD: 1998,
                         },
                         {
-                            id: 7, name: 'Marcelle MAINGUY', isExpanded: false
+                            id: 7, name: 'Suzanne SABLOS', isExpanded: false, classes: ['sablos'], year: 1939
                         }
                     ]
                 }
@@ -60,12 +60,5 @@ export class TreeCoreComponent {
     }
 
     fillCoords() {
-        this.coords.push(new PositionModel(33.5724108, -7.6570331));
-        this.coords.push(new PositionModel(35.7068119, -0.7106267));
-        this.coords.push(new PositionModel(43.4542839, 1.2420698));
-        this.coords.push(new PositionModel(43.0650278, 0.7518692));
-        this.coords.push(new PositionModel(42.8474076, 1.7890215));
-        this.coords.push(new PositionModel(47.1858878, -1.7001131));
-        this.coords.push(new PositionModel(45.9949653, 0.863831));
     }
 }

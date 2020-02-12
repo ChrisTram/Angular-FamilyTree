@@ -17,6 +17,38 @@ export class TreeCoreComponent {
                     children: [
                         {
                             id: 4, name: 'Noël TRAMIER', isExpanded: false, classes: ['tramier'], year: 1934,
+                            children: [
+                                {
+                                    id: 8, name: 'Edouard Auguste TRAMIER', isExpanded: false, classes: ['tramier'], year: 1887, yearD: 1971,
+                                    children: [
+                                        {
+                                            id: 10, name: 'Louis TRAMIER', isExpanded: false, classes: ['tramier'], year: 1857, yearD: 1938,
+                                            children: [
+                                                {
+                                                    id: 12, name: 'Jean Baptiste Louis TRAMIER', isExpanded: false, classes: ['tramier'], year: 1835, yearD: 1922,
+                                                    children: [
+                                                        {
+                                                            id: 14, name: 'Joseph TRAMIER', isExpanded: false, classes: ['tramier'], year: 1809, yearD: 1855,
+                                                        },
+                                                        {
+                                                            id: 15, name: 'Marie Françoise BAGNOL', isExpanded: false, year: 1808, yearD: 1895,
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    id: 13, name: 'Marie Anne BERTRAND', isExpanded: false, year: 1834, yearD: 1904,
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            id: 11, name: 'Marie Louise FLORIOT', isExpanded: false, classes: ['FLORIOT'], year: 1856, yearD: "1938+",
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 9, name: 'Louise Julie POINT DE FONBERTASSE', isExpanded: false, classes: ['point'], year: 1899
+                                }
+                            ]
                         },
                         {
                             id: 5, name: 'Micheline CALABRESE', isExpanded: false, year: 1942, classes: ['calabrese']

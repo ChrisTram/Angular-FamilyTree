@@ -17,7 +17,7 @@ import {TreeCoreComponent} from './components/branch-core/tree-core.component';
     BrowserModule,
     TreeModule,
     AgmCoreModule.forRoot({
-        apiKey: 'AIzaSyD6HaD4bOSTy751U6skRivdT_KMhs1xqLE'
+        apiKey: ''
     })
   ],
   providers: [DescriptionsService],
